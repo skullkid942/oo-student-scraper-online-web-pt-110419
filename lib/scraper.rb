@@ -22,7 +22,9 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     site = https://learn-co-curriculum.github.io/student-scraper-test-page/
     
-    page = 
+    page = Nokogiri::HTML(open(site))
+    
+    
   end
 
 end
