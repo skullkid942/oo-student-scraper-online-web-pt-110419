@@ -2,9 +2,7 @@ require 'open-uri'
 require 'pry'
 
 class Scraper
-  
-  
-  profile_url = page.css "a.student-card href"
+
 
   def self.scrape_index_page(index_url)
     site = https://learn-co-curriculum.github.io/student-scraper-test-page/
