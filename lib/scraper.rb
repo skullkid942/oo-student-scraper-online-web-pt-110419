@@ -7,7 +7,7 @@ class Scraper
     
   page = Nokogiri::HTML(open(site))
   
-  profile_url = page.css "a.student-card"
+  profile_url = page.css "a.student-card href"
 
   def self.scrape_index_page(index_url)
     
