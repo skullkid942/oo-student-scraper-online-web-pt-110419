@@ -3,9 +3,6 @@ require 'pry'
 
 class Scraper
   
-  site = https://learn-co-curriculum.github.io/student-scraper-test-page/
-    
-  page = Nokogiri::HTML(open(site))
   
   profile_url = page.css "a.student-card href"
 
