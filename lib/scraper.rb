@@ -10,6 +10,9 @@ class Scraper
   profile_url = page.css "a.student-card href"
 
   def self.scrape_index_page(index_url)
+    site = https://learn-co-curriculum.github.io/student-scraper-test-page/
+    
+    page = Nokogiri::HTML(open(site))
     
     name = page.css"a.card-text-container h4"
     
@@ -23,7 +26,9 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url)
+    site = https://learn-co-curriculum.github.io/student-scraper-test-page/
     
+    page = Nokogiri::HTML(open(site))
     
   end
 
